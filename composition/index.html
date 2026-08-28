@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en" data-resolution="landscape">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1920, height=1080">
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { width:1920px; height:1080px; overflow:hidden; background:#061230; }
+#deck-root { position:absolute; inset:0; background:#061230; }
+#deck-root > div[data-composition-src] { position:absolute; inset:0; }
+</style>
+</head>
+<body>
+<script type="application/hyperframes-slideshow+json">
+{
+  "slides": [
+    {
+      "sceneId": "title",
+      "notes": "Open. The readable, provenance-first daily brief."
+    },
+    {
+      "sceneId": "summary",
+      "notes": "Quiet day; ZATCA Wave 25 is the thing to act on."
+    },
+    {
+      "sceneId": "zatca",
+      "notes": "Lead here. Heaviest live obligation, hard deadline, hits every vertical. It holds at CITED \u2014 ZATCA's own release wasn't opened."
+    },
+    {
+      "sceneId": "sfda-drug",
+      "notes": "Strongest provenance in the brief \u2014 read on SFDA's own news page, so VERIFIED."
+    },
+    {
+      "sceneId": "sfda-food",
+      "notes": "The interception is VERIFIED; the 'tighter checks ahead' inference is the transmission, so CITED."
+    },
+    {
+      "sceneId": "tourism",
+      "notes": "First phase from 22 April 2026 \u2014 current regulatory state, not today's news."
+    },
+    {
+      "sceneId": "nitaqat",
+      "notes": "~340,000 jobs to localize by 2028. Structural, months-old \u2014 carried as current state."
+    },
+    {
+      "sceneId": "watch",
+      "notes": "The discipline in one slide: an asserted mechanism can never be a finding."
+    },
+    {
+      "sceneId": "method",
+      "notes": "Close on the discipline that makes the brief trustworthy."
+    }
+  ],
+  "slideSequences": []
+}
+</script>
+<div id="deck-root" data-composition-id="root" data-start="0" data-duration="32.2" data-width="1920" data-height="1080">
+  <div id="scene-title" data-composition-id="title" data-composition-src="compositions/title.html" data-start="0.0" data-duration="3.0" data-track-index="1" data-width="1920" data-height="1080"></div>
+  <div id="scene-summary" data-composition-id="summary" data-composition-src="compositions/summary.html" data-start="3.2" data-duration="3.5" data-track-index="1" data-width="1920" data-height="1080"></div>
+  <div id="scene-zatca" data-composition-id="zatca" data-composition-src="compositions/zatca.html" data-start="6.9" data-duration="3.4" data-track-index="1" data-width="1920" data-height="1080"></div>
+  <div id="scene-sfda-drug" data-composition-id="sfda-drug" data-composition-src="compositions/sfda-drug.html" data-start="10.5" data-duration="3.4" data-track-index="1" data-width="1920" data-height="1080"></div>
+  <div id="scene-sfda-food" data-composition-id="sfda-food" data-composition-src="compositions/sfda-food.html" data-start="14.1" data-duration="3.4" data-track-index="1" data-width="1920" data-height="1080"></div>
+  <div id="scene-tourism" data-composition-id="tourism" data-composition-src="compositions/tourism.html" data-start="17.7" data-duration="3.4" data-track-index="1" data-width="1920" data-height="1080"></div>
+  <div id="scene-nitaqat" data-composition-id="nitaqat" data-composition-src="compositions/nitaqat.html" data-start="21.3" data-duration="3.4" data-track-index="1" data-width="1920" data-height="1080"></div>
+  <div id="scene-watch" data-composition-id="watch" data-composition-src="compositions/watch.html" data-start="24.9" data-duration="3.4" data-track-index="1" data-width="1920" data-height="1080"></div>
+  <div id="scene-method" data-composition-id="method" data-composition-src="compositions/method.html" data-start="28.5" data-duration="3.5" data-track-index="1" data-width="1920" data-height="1080"></div>
+</div>
+<script>
+window.__timelines = window.__timelines || {};
+window.__timelines['root'] = gsap.timeline({paused:true});
+</script>
+</body></html>

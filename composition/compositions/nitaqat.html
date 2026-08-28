@@ -1,0 +1,50 @@
+<!doctype html>
+<html><head><meta charset="UTF-8"></head><body>
+<template>
+<style>
+#root{
+  --navy:#091E3D; --navy-deep:#061230; --accent:#0068A8; --teal:#00A5AA;
+  --gold:#D4A843; --ink:#F4F6FA; --ink-2:#AEB8C8; --ink-3:#7E88A0;
+  --fd:"Avenir Next","Segoe UI",sans-serif; --fb:"Segoe UI","Avenir Next",sans-serif;
+  --fl:"TBI Label","Avenir Next",sans-serif;
+  position:absolute; inset:0; width:1920px; height:1080px; overflow:hidden;
+  background:var(--navy-deep); color:var(--ink); font-family:var(--fb);
+}
+#root .pad{position:absolute;inset:0;padding:110px 140px;display:flex;flex-direction:column}
+#root .eyebrow{font-family:var(--fl);font-size:26px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--teal);margin:0}
+#root .eyebrow.gold{color:var(--gold)} #root .eyebrow.slate{color:var(--ink-3)}
+#root .title{font-family:var(--fd);font-weight:700;font-size:96px;line-height:1.03;letter-spacing:-.01em;margin:22px 0 0;color:#fff}
+#root .vtitle{font-family:var(--fd);font-weight:700;font-size:74px;line-height:1.05;margin:14px 0 0;color:#fff}
+#root .strap{font-family:var(--fd);font-size:44px;line-height:1.35;color:var(--ink-2);margin:34px 0 0;max-width:1400px}
+#root .date{font-family:var(--fl);font-size:30px;letter-spacing:.06em;color:var(--ink-2);margin-top:auto}
+#root .meta{display:flex;align-items:center;gap:22px;margin:30px 0 0;color:var(--ink-3);font-size:30px;font-family:var(--fl)}
+#root .meter{display:inline-flex;gap:8px}
+#root .pip{width:46px;height:14px;border-radius:4px;background:#20304e}
+#root .pip.on{background:var(--accent)} #root .esc .pip.on{background:var(--gold)}
+#root .chain{margin-top:54px;display:flex;flex-direction:column;gap:30px;max-width:1520px}
+#root .row{display:grid;grid-template-columns:230px 1fr 190px;gap:34px;align-items:start}
+#root .rlab{font-family:var(--fl);font-size:26px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);padding-top:8px}
+#root .rclaim{font-size:38px;line-height:1.4;color:var(--ink)}
+#root .prov{justify-self:end;font-family:var(--fl);font-size:24px;font-weight:700;letter-spacing:.06em;padding:8px 18px;border-radius:10px;height:fit-content;white-space:nowrap}
+#root .prov.VERIFIED{background:rgba(0,165,170,.18);color:#5BE0DF}
+#root .prov.CITED{background:rgba(212,168,67,.20);color:#EBC873}
+#root .prov.ASSERTED{background:rgba(232,101,74,.18);color:#F29179}
+#root .count{font-family:var(--fd);font-weight:700;color:#fff}
+#root .count .n{color:var(--teal)} #root .count .g{color:var(--gold)}
+#root .legend{display:flex;flex-direction:column;gap:26px;margin-top:44px}
+#root .legend .li{display:flex;align-items:center;gap:20px;font-size:34px;color:var(--ink-2)}
+#root .foot{margin-top:auto;font-size:30px;line-height:1.5;color:var(--ink-3);max-width:1520px}
+#root .brandbar{position:absolute;left:0;right:0;bottom:0;height:12px;background:linear-gradient(90deg,var(--accent) 0 55%,var(--teal) 55% 80%,var(--gold) 80% 100%)}
+#root .kick{position:absolute;top:110px;right:140px;font-family:var(--fl);font-size:26px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3)}
+</style>
+<div id="root" data-composition-id="nitaqat" data-width="1920" data-height="1080">
+<div class="pad clip" data-start="0" data-duration="3.4" data-track-index="1"><span class="kick">TBI daily brief · 12 Aug</span><p class="eyebrow " id="nitaqat-eye">Finding · General commerce · people constraint</p><h2 class="vtitle" id="nitaqat-title">Nitaqat 2026–2028</h2><div class="meta"><span class="meter"><span class="pip on"></span><span class="pip on"></span><span class="pip on"></span><span class="pip "></span><span class="pip "></span></span><span>magnitude 3/5</span><span>·</span><span>audit 8/10</span></div><div class="chain"><div class="row"><span class="rlab">Signal</span><span class="rclaim">The new Nitaqat phase removes the Yellow tier, raises sector quotas, and counts only Qiwa-documented contracts.</span><span class="prov CITED">CITED</span></div><div class="row"><span class="rlab">Mechanism</span><span class="rclaim">Counting only documented Saudi contracts and raising quotas changes each firm&#x27;s Saudization arithmetic.</span><span class="prov CITED">CITED</span></div><div class="row"><span class="rlab">Lands on</span><span class="rclaim">Firms must document every Saudi contract on Qiwa and meet higher quotas, or fall a band.</span><span class="prov CITED">CITED</span></div></div></div><div class="brandbar"></div>
+</div>
+<script>
+window.__timelines = window.__timelines || {};
+(function(){ const tl=gsap.timeline({paused:true});
+  tl.fromTo('#nitaqat-title',{y:12},{y:0,duration:1,ease:'power2.out'},0);
+  window.__timelines['nitaqat']=tl; })();
+</script>
+</template>
+</body></html>
